@@ -10,4 +10,5 @@ echo "Setting up 20 sided dice..."
 echo ""
 echo "Rolling..."
 echo ""
+#We use the 20 + 1 to get an actual 1-20 roll. if there was no + 1 it would only go up to 19. 
 echo "$(( RANDOM % 20 + 1)) / 20 rolled"

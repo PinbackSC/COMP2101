@@ -26,13 +26,29 @@ time=$(date +"%I:%M %p")
 # Main        #
 ###############
 
+#For this task I looked at the test man pages, I had to google it.
+#It showed that you can test if a string = string.
+
+#So I took what I learned and used the test command to test if the variable date was matching any of the days of the week (as a string).
+#it worked, and it was easy considering there is only 7 days to test for all I had to do was write the command 7 times and change the
+#String it was testing against each time. If the date does not = the string, then it wont run the next command after the && and it will move on
+#With the rest of the script.
+
+##################
+# What it means: #
+##################
+
+#Test if the date variable = "Day of the week String" and if it does, then the new title variable = "This title"
+
 test $date = "Monday" && title="supreme Leader"
 test $date = "Tuesday" && title="Cpt."
 test $date = "Wednesday" && title="Lt."
 test $date = "Thursday" && title="My dude,"
 test $date = "Friday" && title="Mr."
 test $date = "Saturday" && title="Dr."
-test $date = "Sunday" && title="Gamer" 
+test $date = "Sunday" && title="Gamer"
+
+#Simple command to print a welcome messege to the user, and calls the different variables that were used. 
 
 cat <<EOF
 

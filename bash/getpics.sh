@@ -17,7 +17,8 @@ test -f ~/Pictures/pics.zip || wget -q -O ~/Pictures/pics.zip http://zonzorp.net
 # unpack the downloaded zipfile if it is there, then delete the local copy of the zipfile
 test -f ~/Pictures/pics.zip && unzip -d ~/Pictures -o -q ~/Pictures/pics.zip && rm ~/Pictures/pics.zip
 
-#Doing task 1, get the tar file from the web
+#Doing task 1, get the tar file from the web, extract the tar file and put the contents in the ~/Pictures directory
+#Then remove the useless tar file after. 
 test -f ~/pictures/pics.tgz || wget -q -O ~/Pictures/pics.tgz https://zonzorp.net/pics.tgz
 test -f ~/Pictures/pics.tgz && tar -xzf ~/Pictures/pics.tgz -C ~/Pictures && rm -r ~/Pictures/pics.tgz
 
