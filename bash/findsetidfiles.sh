@@ -32,7 +32,7 @@ echo ""
 echo "Sorting by groups..."
 echo ""
 find / -type f -executable -perm -2000 -ls 2>/dev/null | sort -k 5
-
+kai
 #For task 2 this generates the largest regular files in the system, sorted by their size in MBs
 #Displays only the following:
 # File name ; Owner ; Size in MBs.

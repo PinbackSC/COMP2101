@@ -48,11 +48,8 @@ test $date = "Friday" && title="Mr."
 test $date = "Saturday" && title="Dr."
 test $date = "Sunday" && title="Gamer"
 
-#Simple command to print a welcome messege to the user, and calls the different variables that were used.
+#Login-welcome.sh first part of lab 3. Stores the output in a variable instead of printing to the screen
+outputVariable="Welcome to planet $hostname  $title $USER! It is $date $time"
 
-cat <<EOF
-
-Welcome to planet $hostname, "$title $USER!"
-It is $date, $time
-
-EOF
+#Uses the cowsay command to print the variable containing the data
+cowsay $outputVariable
