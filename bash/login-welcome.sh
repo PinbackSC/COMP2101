@@ -48,7 +48,7 @@ test $date = "Friday" && title="Mr."
 test $date = "Saturday" && title="Dr."
 test $date = "Sunday" && title="Gamer"
 
-#Login-welcome.sh first part of lab 3. Stores the output in a variable instead of printing to the screen
+#Login-welcome.sh first part of lab 3. Stores the output in a variable instead of printing to the screen.
 outputVariable="Welcome to planet $hostname  $title $USER! It is $date $time"
 
 #Uses the cowsay command to print the variable containing the data

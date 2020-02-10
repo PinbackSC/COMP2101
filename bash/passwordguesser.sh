@@ -64,8 +64,3 @@ if [ $passwordAttempt = $actualPassword ]; then
     fi
   fi
 fi
-
-
-
-# old way
-#[ $passwordAttempt = $actualPassword ] && echo "Correct!" || echo "Incorrect."
